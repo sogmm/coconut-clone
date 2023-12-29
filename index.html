@@ -27,11 +27,28 @@
       </div>
     </div>
 
-    <header>
+    <header class="log-in-header">
       <h1>Welcome to Coconut</h1>
       <p>
         If you have a Coconut Account, log in with your email or phone number
       </p>
     </header>
+
+    <form class="login-form">
+      <input
+        class="login-form__text-input"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        class="login-form__text-input"
+        type="password"
+        placeholder="Password"
+        required
+      />
+      <input class="login-form__btn" type="button" value="Log In" />
+      <input class="login-form__btn" type="button" value="Sign Up" />
+      <p>Find Kakao Account or Password</p>
+    </form>
   </body>
 </html>
