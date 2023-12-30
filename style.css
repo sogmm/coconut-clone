@@ -7,6 +7,7 @@ body {
 
 .status-bar {
   display: flex;
+  margin-top: 5px;
   justify-content: center;
 }
 
@@ -30,7 +31,32 @@ body {
 .status-bar__column:last-child {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
+  position: relative;
+  top: -7px;
+}
+
+.log-in-header {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.log-in-header :nth-child(2) {
+  margin-top: 35px;
+}
+
+.log-in-header h1 {
+  font-size: 30px;
+}
+
+.log-in-header p {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.login-form {
+  margin-top: 100px;
 }
