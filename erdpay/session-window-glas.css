@@ -34,12 +34,11 @@ body {
 }
 
 .session-window .erdstall-logo {
-  margin-top: 50px;
+  margin-top: 35px;
   transform: scale(0.7);
   filter: brightness(0) invert(1);
   position: relative;
-  /* left: -155px; */
-  top: -40px;
+  top: -25px;
   right: -155px;
 }
 
@@ -55,7 +54,7 @@ body {
   height: 30px;
   position: relative;
   left: -200px;
-  top: -85px;
+  top: -70px;
   will-change: transform;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -63,11 +62,11 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   transition: transform 0.3s, border 0.2s;
   backdrop-filter: blur(30px);
+  cursor: pointer;
 }
 
 .session-window__header {
   color: white;
-  margin-top: 15px;
 }
 
 .session-window__header h1 {
@@ -146,8 +145,8 @@ body {
 
 .session-window__form input[type="button"]:hover,
 .session-window__x-button:hover {
-  background-color: rgba(255, 255, 255, 0.05);
   transform: perspective(1px) scale(1.02, 1.02);
+  background-color: rgba(255, 255, 255, 0.05);
   border: 1.5px solid rgba(255, 255, 255, 0.3);
 }
 
