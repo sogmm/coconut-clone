@@ -38,8 +38,31 @@ body {
   transform: scale(0.7);
   filter: brightness(0) invert(1);
   position: relative;
-  left: -155px;
+  /* left: -155px; */
   top: -40px;
+  right: -155px;
+}
+
+.session-window .fa-angle-left {
+  transform: scale(1.2, 1.2);
+  position: relative;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+}
+
+.session-window__x-button {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: -200px;
+  top: -85px;
+  will-change: transform;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1), -1px -1px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s, border 0.2s;
+  backdrop-filter: blur(30px);
 }
 
 .session-window__header {
@@ -66,6 +89,7 @@ body {
   gap: 10px;
 }
 
+/* "or" between buttons */
 .session-window__form span {
   margin: 10px 0px;
   color: white;
@@ -86,15 +110,18 @@ body {
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
   outline: none;
+
+  will-change: transform;
   transition: transform 0.3s, border 0.2s;
 }
 
+/* firstbutton */
 .session-window__form input:first-child {
   height: 50px;
 }
 
 .session-window__form input[type="text"] {
-  width: 240px;
+  width: 280px;
   height: 38px;
 
   padding-left: 15px;
@@ -117,12 +144,14 @@ body {
   opacity: 0.4;
 }
 
-.session-window__form input[type="button"]:hover {
+.session-window__form input[type="button"]:hover,
+.session-window__x-button:hover {
   background-color: rgba(255, 255, 255, 0.05);
-  transform: scale(1.02, 1.02);
+  transform: perspective(1px) scale(1.02, 1.02);
   border: 1.5px solid rgba(255, 255, 255, 0.3);
 }
 
-.session-window__form input[type="button"]:active {
+.session-window__form input[type="button"]:active,
+.session-window__x-button:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
