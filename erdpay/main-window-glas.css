@@ -87,11 +87,11 @@ body {
 }
 
 .main-window__form input:hover {
-  transform: perspective(1px) scale(1.02, 1.02);
-  border: 1.5px solid rgba(255, 255, 255, 0.3);
-  background-color: rgba(255, 255, 255, 0.05);
+  transform: perspective(1px) scale(1.04, 1.04);
+  /* border: 0.5px solid rgba(255, 255, 255, 0.4); */
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .main-window__form input:active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.02);
 }
