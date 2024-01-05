@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="transfer-window-glass.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b27b356814.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Transfer</title>
+  </head>
+  <body>
+    <div class="transfer-window-container">
+      <img
+        class="erdstall-logo"
+        src="https://nifty.erdstall.dev/static/media/erdstall-logo.4ca5436f.png"
+        alt="TypeScript"
+      />
+      <button class="goback-button">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+
+      <h1>Your Token</h1>
+      <div class="token-window">
+        <p>You have no token available</p>
+        <!-- 수정예정 -->
+      </div>
+
+      <h1>Transfer</h1>
+      <form class="transfer-form">
+        <!-- <p>Transfer to</p> -->
+        <input type="text" placeholder="recipient address" />
+        <input type="button" value="make transfer" />
+      </form>
+
+      <h1>Mint</h1>
+      <form class="mint-form">
+        <input type="text" placeholder="token address" />
+        <input type="text" placeholder="token ID" />
+        <input type="button" value="mint new token" />
+      </form>
+    </div>
+  </body>
+</html>
